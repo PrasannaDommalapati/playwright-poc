@@ -20,11 +20,4 @@ function readExcelFile(fileName, sheetName) {
   return jsonData;
 }
 
-// Usage
-const sheetName = 'Sheet1'; // Specify the sheet name
-const data = readExcelFile('data.xlsx', sheetName); // Make sure 'data.xlsx' is in the project root directory
-console.log(data);
-
-data.forEach(row => {
-  console.log(row["First Name"]);  // Log the "First Name" value
-});
+module.exports = {readExcelFile};
